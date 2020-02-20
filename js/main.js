@@ -56,7 +56,7 @@ $(document).ready(function () {
 	});
 
 	$('.search-results-pagination').on('click', 'a', function (evt) {
-		
+		evt.preventDefault();
 		var link = $(this).attr('href');
 
 		$.ajax({
@@ -68,7 +68,7 @@ $(document).ready(function () {
 	});
 
 	$('.search-form').on('submit', function (evt) {
-		
+		evt.preventDefault();
 		SEARCH_URL = $(this).attr('action') + $(this).find('.search-input').val();
 
 		
