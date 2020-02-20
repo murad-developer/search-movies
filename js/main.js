@@ -56,7 +56,7 @@ $(document).ready(function () {
 	});
 
 	$('.search-results-pagination').on('click', 'a', function (evt) {
-		evt.preventDefault();
+		
 		var link = $(this).attr('href');
 
 		$.ajax({
