@@ -1,0 +1,41 @@
+html {
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+body {
+	padding: 0;
+	margin: 0;
+	line-height: 1.5;
+	font-family: "Arial", sans-serif;
+}
+.search-results-item {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.movie-title{
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+@media (max-width: 425px){
+	.movie-title{
+		font-size: 35px;
+	}
+}
+@media (max-width: 320px){
+	.movie-title{
+		font-size: 30px;
+	}
+}

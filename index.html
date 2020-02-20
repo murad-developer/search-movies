@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Movies</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body class="#00695c teal darken-3">
+
+	<div class="container">
+		<h2 class="white-text movie-title">Search your favorite movie</h2>
+		<form class="search-form row valign-wrapper" action="http://www.omdbapi.com/?apikey=249e8962&s=" method="GET">
+			<div class="col sm6">
+				<div class="input-field">
+					<input class="search-input" id="search-input" type="search" name="search" placeholder="Search" required>
+					<label for="search-input">Write movie title</label>
+				</div>
+			</div>
+			<div class="col sm6">
+				<button class="waves-effect waves-light btn" type="submit">Search</button>
+			</div>
+		</form>
+
+		<hr>
+
+		<div class="row">
+			<div class="col m6">
+				<ul class="collection search-results hide"></ul>
+				<ul class="pagination search-results-pagination"></ul>
+			</div>
+
+			<div class="col m6">
+				<div class="card movie-info-card hide">
+					<div class="card-image">
+						<img class="movie-poster" src="" alt="">
+					</div>
+					<div class="card-content">
+						<span class="card-title movie-title darken-2"></span>
+						<p class="movie-plot"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/materialize.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
